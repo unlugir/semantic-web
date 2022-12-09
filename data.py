@@ -13,7 +13,9 @@ class University:
         self.img_src = img
         self.description = desc
         self.link = link
+
 wrapper  = SPARQLWrapper("https://dbpedia.org/sparql")
+
 def get_cities():
     q = """
 select distinct ?name ?img ?population where
